@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#228000</color>
+    <color name="bg_btn">#FF9900</color>
+    <color name="colorBg">#FFF38B</color>
+    <color name="gradien_end">#2196F3</color>
+    <color name="pink">#FF68CD</color>
+    <color name="colorBtnPressed">#C8C8C8</color>
+    <color name="colorStrokeBtnPressed">#474747</color>
+    <color name="colorWifiDialog">#2E2E2E</color>
+</resources>

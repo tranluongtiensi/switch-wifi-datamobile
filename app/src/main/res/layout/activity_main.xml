@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_title"
+        android:text="ỨNG DỤNG ĐỔI MẠNG"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/container_round_btn"
+        android:layout_below="@id/app_title"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:padding="10dp">
+        <ImageButton
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/wifi_imgbtn"
+            android:src="@drawable/wifi2_slash"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_effect"
+            android:padding="30dp"
+            android:layout_marginBottom="20dp"/>
+        <ImageButton
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/datamobile_imgbtn"
+            android:src="@drawable/mobile_data2"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_effect"
+            android:padding="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/container_status"
+        android:layout_below="@+id/container_round_btn"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Trạng thái wifi:  "
+                android:textSize="30sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/wifi_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bật"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái 4G:  "
+                android:textSize="30sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/mobile_data_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tắt"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="t.i.e.n.s.i.b.e.t.a.0.1.0"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>
